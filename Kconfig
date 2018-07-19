@@ -1,0 +1,16 @@
+menu "Over The h2 Air (oth2a) configuration"
+
+config OTH2A_BASE_URL
+	string "Base url for OTA updates"
+		default "https://update.server:443"
+		help
+			URL where to check for new firmware upgrades and where
+			to download the ota binaries.
+config OTH2A_FIRMWARE_PREAMBLE
+	string "Firmware file preamble"
+		default "firmware"
+		help
+			The preamble that is used to download firmware blobs from
+			the OTA server.
+
+endmenu
