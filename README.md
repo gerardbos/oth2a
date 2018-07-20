@@ -3,6 +3,7 @@
 ## Dependencies
 - [ESP-IDF](https://github.com/espressif/esp-idf)
 - [ESP32log](https://github.com/gerardbos/esp32log)
+- [h2clientserver](https://github.com/gerardbos/h2clientserver)
 
 ### Features
 - Upgrade firmware using a download from an HTTP/2 server
