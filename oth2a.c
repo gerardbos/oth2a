@@ -171,6 +171,7 @@ static bool update_firmware(char * new_version)
 	r.url = bin_url;
 	r.responsebody.method = H2_HANDLEBODY_CALLBACK;
 	r.responsebody.callback = write_to_flash;
+	r.timeout_ms = 300000; // 5 minute timeout for firmware upgrade
 
 	// As we are update the flash streaming, we can't check for
 	// the HTTP status. The flash function will check if a proper firmware
